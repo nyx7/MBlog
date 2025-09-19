@@ -281,7 +281,7 @@ article h1 {
 }
 
 .hero {
-  background: linear-gradient(to right, #4a90e2, #357ab8); /* or a nice image */
+  background: linear-gradient(to left, #4a90e2, #357ab8); 
   color: white;
   padding: 3rem 1rem;
   text-align: center;
