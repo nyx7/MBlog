@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MProjects</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+    <div id="header" class="hero">
+        <h1>MBlog</h1>
+        <nav class="navbar">
+        <a href="{{url_for('home')}}" class="nav-link" >Home</a>
+        <a href="{{url_for('posts')}}" class="nav-link">Posts</a>
+        <a href="{{url_for('projects')}}" class="nav-link" id="current">Projects</a>
+        <a href="{{url_for('about')}}" class="nav-link">About</a>
+        </nav>
+    </div>
+    <div style="background-color: rgba(39, 96, 146, 0.395); border-radius: 5px; padding: 10px 10px; margin: 30px auto; text-align: center; width: fit-content; margin-top: 150px;">
+        Coming soon...
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>

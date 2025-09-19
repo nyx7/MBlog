@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Update Post-{{Spost[0]}}</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; gap: 30px; justify-items: center; justify-content: center; align-items: center; align-content: center; width: 90%;">
+    <input id="Uptitle" type="text" value="{{Spost[1]}}" class="input" placeholder="Update Title...">
+    <textarea id="Uptxt" class="input" placeholder="Update text...">{{Spost[2]}}</textarea></br>
+    <div style="display: flex; gap: 30px;">
+    <button onclick="SubmitUpdate('{{Spost[0]}}')">Submit</button>
+    <button onclick="window.location.href='/admin'">Cancel</button>
+    </div>
+    </div>
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p>Are you sure you want to delete this post?</p>
+            <button id="YesBtn">Yes</button>
+            <button id="NoBtn">No</button>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

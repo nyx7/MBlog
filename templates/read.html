@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Post-{{Spost[0]}}</title>
+</head>
+<body style="background-color: rgb(214, 214, 214);">
+    <header id="post-header">
+        <span id="blogname">MBlog</span>
+        <nav class="post-navbar">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/posts" class="nav-link">Posts</a>
+            <a href="/projects" class="nav-link">My Projects</a>
+        </nav>
+    </header>
+<article>
+    <h1 style="margin-top: 30px;">{{Spost[1]}}</h1>
+    <p id="posttext">{{Spost[2]}}</p>
+</article>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

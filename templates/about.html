@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About M</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header" class="hero">
+        <h1>MBlog</h1>
+        <nav class="navbar">
+        <a href="{{url_for('home')}}" class="nav-link" >Home</a>
+        <a href="{{url_for('posts')}}" class="nav-link">Posts</a>
+        <a href="{{url_for('projects')}}" class="nav-link">Projects</a>
+        <a href="{{url_for('about')}}" class="nav-link" id="current">About</a>
+        </nav>
+    </div>
+    <div class="divs" style="margin-top: 150px;">
+        <h2>About me</h2>
+        <p>I’m Mohamed, a 16-year-old student from Morocco in my final year of high school (2BAC Sciences Math). This is supposed to be the toughest year of my life so far — and I’m ready for it. My goal? To become one of the greats, someone remembered, someone whom others rely on and trust, someone worthy.<br/><br/>
+
+I’ve spent this past year learning — not just from textbooks, but from life. I learned Python, built my first apps, and now I’m exploring web development. I’ve been improving my English and French, preparing for competitive universities, and building better habits — discipline, focus, prayer, health. Some days I’m consistent; some days I fail. But I always come back stronger.<br/><br/>
+
+I’m not rich, I’m not a genius, but most importantly, I’m not waiting for a miracle. What I have is effort. I believe that hard work, faith, and curiosity can open doors no one expects you to walk through. I like to break records, solve problems, discover the unknown.<br/><br/>
+
+I don’t know exactly where this path will lead me — maybe the Top, maybe the Bottom, maybe somewhere completely unexpected — but I know I’m going to push with everything I’ve got. Because there’s only one way forward: earn it.<br/><br/>
+</p>
+    </div>
+    <div>
+        <h2>CONTACTS</h2>
+        <a href="https://www.instagram.com/ny__x7/" target="_blank"><img src="url_for('images', filename='ig')"></a>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
