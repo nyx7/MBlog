@@ -20,16 +20,21 @@
         <h2>Hi, I am Mohamed</h2>
         <p>Welcome to MBlog (Mohamed's Blog) ,Here You'll find Science. Computers. Space. My thoughts, projects, "researches", experiments — welcome to my digital lab.</br.></p>
     </div>
-    <div class="divs" style="background-color: rgba(60, 137, 169, 0.295);">
+    <div class="divs" style="background-color: rgba(60, 137, 169, 0.295);" id="insights-div">
         <h1 style="color: rgb(60, 66, 71); margin-top: 10px;">Insights</h1>
         {% for post in Wposts %}
-        <div class="posts" style="margin-bottom: 20px; width: 93%;">
+        <div class="posts" style="margin-bottom: 20px; width: 93%;" id="insights-post">
             <h2>{{ post[1] }}</h2>
             <p>{{ post[2] | truncate(450, True, '...')}} <button id="seemore" onclick="ScalePost('{{post[0]}}')">see more</button></p>
         </div>
         {% endfor %}
         <button onclick="window.location.href='/posts'">See more Posts</button>
     </div>
+    
+    <div style="display: flex; justify-content: end; width: 100%; ">
+        <button onclick="window.location.href='/posts'" style="right: 0; margin: 5px; margin-bottom: 10px;" class="topage"> to posts &gt;</button>
+    </div>
+    
     <footer>© 2025 Mohamed — Built with ❤️ and HTML/CSS</footer>
     <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
