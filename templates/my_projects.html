@@ -19,6 +19,12 @@
     <div style="background-color: rgba(39, 96, 146, 0.395); border-radius: 5px; padding: 10px 10px; margin: 30px auto; text-align: center; width: fit-content; margin-top: 150px;">
         Coming soon...
     </div>
+        
+    <div style="display: flex; justify-content: space-between; width: 100%; position: fixed; bottom: 0;">
+        <button onclick="window.location.href='/posts'" style="right: 0; margin: 5px; margin-bottom: 10px;" class="topage">&lt; to posts</button>
+        <button onclick="window.location.href='/about'" style="right: 0; margin: 5px; margin-bottom: 10px;" class="topage"> to about &gt;</button>
+    </div>
+        
     <script src="{{url_for('static', filename='script.js')}}"></script>
     </body>
 </html>
