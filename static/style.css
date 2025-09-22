@@ -3,8 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,8 +50,7 @@ footer {
 .navbar {
   display: flex;
   justify-content: center;
-  padding: 15px;
-  padding-right: 0px;
+  padding: 15px 0px 15px 15px;
   margin: 0px;
   gap: 20px;
   width: 35%;
@@ -92,14 +90,13 @@ footer {
 
 #header {
     padding: 10px 20px;
-    margin: 0px auto;
-    margin-top: 5px;
+    margin: 5px auto 0px auto;
     border-radius: 10px;
     height: fit-content;
     width: 100%;
     max-width: 1000px;
     position: fixed;
-    top: 0px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -141,7 +138,7 @@ footer {
     margin-bottom: 45px;
     transition: transform 0.2s ease;
     width: 90%;
-    max-width: 800px;
+    max-width: 770px;
 }
 .posts:hover {
     transform: translateY(-5px);
@@ -297,3 +294,128 @@ article h1 {
   margin-bottom: 1rem;
 }
 
+.topage {
+    display: none;
+}
+
+#insights-div div {
+    width: 95%;
+}
+
+@media (max-width: 1024px) {
+    body {
+    line-height: 1;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+    #header {
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0px auto;
+    border-radius: 0px;
+    height: fit-content;
+    width: 100%;
+    max-width: 1024px;
+    top: 0px;
+    z-index: 1000;
+}
+
+#postsdiv {
+    margin-top: 100px;
+}
+
+#welcome-div {
+        margin-top: 100px;
+}
+
+.navbar {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 1%;
+    max-width: 600px;
+    height: 15%;
+    max-height: 45px;
+    transition: all 0.5s ease;
+}
+
+.nav-link {
+    color: black;
+    width: 25%;
+    font-size: 60%;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 8px;
+    font-weight: 50%;
+    transition: all 0.5s ease;
+}
+.nav-link:hover {
+    background-color: #1f317b00;
+    color: black;
+    font-weight: 700;
+}
+
+#current {
+    font-size: 70%;
+    width: 30%;
+}
+
+#post-header {
+    padding: 10px;
+    padding-bottom: 5px;
+    border-radius: 0;
+    width: 100%;
+    align-items: center;
+    font-size: larger;
+}
+
+article {
+    margin-top: 80px;
+    padding: 15px;
+}
+
+#insights-div div {
+    width: 93%;
+}
+}
+
+
+@media (max-width:500px) {
+    #header nav {
+        display: none;
+    }
+
+    #postsdiv {
+        margin-top: 80px;
+    }
+
+    #header h1 {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .topage {
+        display: flex;
+    }
+
+    #insights-div {
+        width: 85%;
+        padding-left: 2px;
+    }
+
+    #welcome-div {
+        margin-top: 80px;
+    }
+
+
+}
